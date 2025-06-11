@@ -75,7 +75,7 @@ export default async function RootLayout({
   );
 
   return (
-    <html lang={params.lang}>
+    <html >
       <body>
         <Navbar
           links={navbar.links}

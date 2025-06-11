@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-import heroImage from '../../../public/heroImage.avif'; // Adjust the path as necessary
 
 export default function AboutUsPage() {
   return (
@@ -14,7 +12,7 @@ export default function AboutUsPage() {
         </div>
         <div className="md:w-1/2">
           <img
-            src="/home/niveus/prajjawal/PHL_POC/simple-next-website/public/heroImage.avif" // Adjust the path as necessary
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" // Adjust the path as necessary
             alt="Our team"
             width={600}
             height={400}
@@ -36,9 +34,9 @@ export default function AboutUsPage() {
         <h2 className="text-3xl font-semibold text-center mb-10">Our Core Team</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            { name: 'Prajjawal Tiwari', role: 'Founder & CTO', img: '/images/team1.jpg' },
-            { name: 'Aarav Sharma', role: 'Product Manager', img: '/images/team2.jpg' },
-            { name: 'Nisha Kapoor', role: 'Lead Designer', img: '/images/team3.jpg' },
+            { name: 'Prajjawal Tiwari', role: 'Founder & CTO', img: 'https://randomuser.me/api/portraits/men/46.jpg' },
+            { name: 'Aarav Sharma', role: 'Product Manager', img: 'https://randomuser.me/api/portraits/women/44.jpg' },
+            { name: 'Nisha Kapoor', role: 'Lead Designer', img: 'https://randomuser.me/api/portraits/women/47.jpg' },
           ].map((member) => (
             <div key={member.name} className="bg-gray-800 rounded-lg shadow-md p-6 text-center">
               <img
