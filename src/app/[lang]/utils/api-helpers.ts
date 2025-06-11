@@ -1,5 +1,5 @@
 export function getStrapiURL(path = '') {
-    return `${process.env.NEXT_PUBLIC_STRAPI_API_URL || 'http://localhost:1337'}${path}`;
+    return `${process.env.NEXT_PUBLIC_STRAPI_API_URL || 'http://localhost:5004'}${path}`;
 }
 
 export function getStrapiMedia(url: string | null) {
@@ -23,4 +23,4 @@ export function formatDate(dateString: string) {
 }
 
 // ADDS DELAY TO SIMULATE SLOW API REMOVE FOR PRODUCTION
-export const delay = (time: number) => new Promise((resolve) => setTimeout(() => resolve(1), time));
+// export const delay = (time: number) => new Promise((resolve) => setTimeout(() => resolve(1), time));
